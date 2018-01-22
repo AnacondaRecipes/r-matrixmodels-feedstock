@@ -10,8 +10,8 @@ package:
 source:
   fn: MatrixModels_{{ version }}.tar.gz
   url:
-    - https://cran.r-project.org/src/contrib/MatrixModels_{{ version }}.tar.gz
-    - https://cran.r-project.org/src/contrib/Archive/MatrixModels/MatrixModels_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/MatrixModels_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/Archive/MatrixModels/MatrixModels_{{ version }}.tar.gz
   sha256: fe878e401e697992a480cd146421c3a10fa331f6b37a51bac83b5c1119dcce33
 
 
