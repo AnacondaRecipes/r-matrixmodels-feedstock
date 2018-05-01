@@ -14,22 +14,15 @@ source:
     - {{ cran_mirror }}/src/contrib/Archive/MatrixModels/MatrixModels_{{ version }}.tar.gz
   sha256: fe878e401e697992a480cd146421c3a10fa331f6b37a51bac83b5c1119dcce33
 
-
-  # patches:
-   # List any patch files here
-   # - fix.patch
-
 build:
   merge_build_host: True  # [win]
   # If this is a new build for the same version, increment the build number.
   number: 4
 
-
   # This is required to make R link correctly on Linux.
   rpaths:
     - lib/R/lib/
     - lib/
-
 
 requirements:
   build:
