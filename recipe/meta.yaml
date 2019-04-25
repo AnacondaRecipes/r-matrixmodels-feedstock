@@ -17,6 +17,7 @@ build:
   merge_build_host: True  # [win]
   # If this is a new build for the same version, increment the build number.
   number: 4
+  noarch: generic
 
   # This is required to make R link correctly on Linux.
   rpaths:
@@ -53,6 +54,7 @@ about:
   summary: Modelling with sparse and dense 'Matrix' matrices, using modular prediction and response
     module classes.
   license_family: GPL3
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
 
 extra:
   recipe-maintainers:
